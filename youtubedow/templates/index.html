@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Download</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 75vh;
+            margin: 0;
+        }
+        h1{
+            color: blueviolet;
+        }
+        form{
+            background-color:darkorchid;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"]{
+            width:95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid rebeccapurple;
+            border-radius: 4px;
+
+        }
+        button{
+            background-color: dimgray;
+            color: antiquewhite;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: dimgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>YOUTUBE VIDEO DOWNLOADER</h1>
+    <form action="/download" method="post">
+        <label for="url">Place url here</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Download</button>
+    </form>
+
+
+</body>
+</html>
